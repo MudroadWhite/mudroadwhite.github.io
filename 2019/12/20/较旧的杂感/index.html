@@ -1,0 +1,766 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="default">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="1. 学习方法我已经读了很多材料了，感觉读数学书越来越像读更为复杂的计算机操作系统。操作系统里你至少需要搞清楚一般而言CPU是有ALU有CU还有一堆杂七杂八的memory的，然后搞清楚它们是怎么“交互”、怎么协同工作的；至于数学，任何一本入门的书一般在开头的时候，就会像介绍CPU有这个那个构成一样，把一些基础的定义给列出来。所以在开头的章节，最重要的就是搞清楚这些东西是如何像“CPU”一样交互的，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="较旧的杂感">
+<meta property="og:url" content="http://yoursite.com/2019/12/20/较旧的杂感/index.html">
+<meta property="og:site_name" content="Rawrrrrrrr">
+<meta property="og:description" content="1. 学习方法我已经读了很多材料了，感觉读数学书越来越像读更为复杂的计算机操作系统。操作系统里你至少需要搞清楚一般而言CPU是有ALU有CU还有一堆杂七杂八的memory的，然后搞清楚它们是怎么“交互”、怎么协同工作的；至于数学，任何一本入门的书一般在开头的时候，就会像介绍CPU有这个那个构成一样，把一些基础的定义给列出来。所以在开头的章节，最重要的就是搞清楚这些东西是如何像“CPU”一样交互的，">
+<meta property="og:updated_time" content="2019-12-22T07:22:07.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="较旧的杂感">
+<meta name="twitter:description" content="1. 学习方法我已经读了很多材料了，感觉读数学书越来越像读更为复杂的计算机操作系统。操作系统里你至少需要搞清楚一般而言CPU是有ALU有CU还有一堆杂七杂八的memory的，然后搞清楚它们是怎么“交互”、怎么协同工作的；至于数学，任何一本入门的书一般在开头的时候，就会像介绍CPU有这个那个构成一样，把一些基础的定义给列出来。所以在开头的章节，最重要的就是搞清楚这些东西是如何像“CPU”一样交互的，">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/12/20/较旧的杂感/"/>
+
+
+
+
+
+  <title>较旧的杂感 | Rawrrrrrrr</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Rawrrrrrrr</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/20/较旧的杂感/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Roarroarroar">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rawrrrrrrr">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">较旧的杂感</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-20T19:38:06-06:00">
+                2019-12-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/12/20/较旧的杂感/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2019/12/20/较旧的杂感/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="1-学习方法"><a href="#1-学习方法" class="headerlink" title="1. 学习方法"></a>1. 学习方法</h4><p>我已经读了很多材料了，感觉读数学书越来越像读更为复杂的计算机操作系统。操作系统里你至少需要搞清楚一般而言CPU是有ALU有CU还有一堆杂七杂八的memory的，然后搞清楚它们是怎么“交互”、怎么协同工作的；至于数学，任何一本入门的书一般在开头的时候，就会像介绍CPU有这个那个构成一样，把一些基础的定义给列出来。所以在开头的章节，最重要的就是搞清楚这些东西是如何像“CPU”一样交互的，而这时候一个例子可能就非常好。到了后面，就更像是一路丰富这个数学系统的时候，说明这个系统有什么问题、引入新的概念（extension），然后再像讲清楚之前的概念一样把新的概念讲清楚，试着告诉大家新概念是如何与之前的概念协同合作的。如果书本给出了章节的联系图，如果章节在联系图之间有联系，那么这一点就更加绝对。</p>
+<p>所有数学书不外难逃一个毛病。组织知识其实是横向组织的，而对概念的解说只能是纵向的解说，一次解说一种概念，而非一组织把一票概念给联系清楚。很多材料虽然都有，但力求简洁而非清楚，这使得那些概括性的东西实际上份额少得可怜。一些人之所以掌握数学，不是因为他们弄懂了一些词语的内涵，而只是因为他们习惯了这个那个词语是这样那样用的。这种情形往往会发生于不是术语，实际上却又仅为领域所用的词汇上。</p>
+<h4 id="2-佩雷尔曼"><a href="#2-佩雷尔曼" class="headerlink" title="2. 佩雷尔曼"></a>2. 佩雷尔曼</h4><p>我最崇敬的数学家就是佩雷尔曼。首先人家搞得不是什么瞎逼逼的辛几何也不是范畴论，再接着也不是什么ABC猜想。纵然如此，人家就是做出了东西。反观知乎上一直鼓吹的那种畸形的风气，那种觉得只有自己的才正确的，但是从没去思考过还有哪些东西可能正确的糟糕风气。去让人引出一个对数学的兴趣是好事，但我不想去认识到数学领域里那么看似牛逼轰轰的位置上有那么垃圾的人。人果然还是要多读一点小说。他以自己的气力证明了世界上最难解决的问题之一，然后痛痛快快地撒手不干。我知道没有朋友的感受是什么样子的，我也觉得本来人们压根就不需要那样追求物质生活。全球的气温如果能降温到人们难以行动的地步就好了。这样子，燥动的内心也不得不冷却下来，正如frostpunk里面的那样。</p>
+<p>你可以说这和Godel很像，虽然Godel的缺点是贵族一贯所有的：过不了独立的生活。于是我还是更喜欢佩雷尔曼。不过Godel也有自己的特色，那就是他并没有发展出任何一门学科。不知道为什么对于Godel来说这反而成为了他的优点，对于其他人来说却没有这种打算。我相信或许开创一个新的学科领域这样子的事情其实也并不一定就意味着什么。总之，Godel也有他自己广为大众（？）所认知的特色。</p>
+<h4 id="3-类型论"><a href="#3-类型论" class="headerlink" title="3. 类型论"></a>3. 类型论</h4><p>希望我没看走眼：如果是集合论，那么哲学性质的说法是想要把数学用一个最简单的模型进行形式化。但如果是类型论，其希望能够把数学看成一种syntax&amp;semantics的对应。我没想到其实是可以有这种主张。我还没完全去搞懂范畴论是想要把数学看成什么，哪怕我知道好像是更加注意什么关系什么结构，但那个理解还不够完整。这下子我突然觉得，其实类型论就它的本质而言，也可以是认为很亲切的，同时，这个思路也非常奇怪——我觉得数学其它任何分支的想法都有某种类似之处，而类型论这个出发点是真正地在把数学看作“语言”。</p>
+<h4 id="4-叛逆-vs-反抗"><a href="#4-叛逆-vs-反抗" class="headerlink" title="4 叛逆 vs 反抗"></a>4 叛逆 vs 反抗</h4><p>你以为青少年的叛逆就真的是成年人、文人哲人的反抗？如果你问青少年为什么叛逆，他们觉得自己的圈子里的人很酷很霸气很社会，所以不想要听家长和学校的话。如果你问写得出东西的成年人、文人哲人为什么反抗，他们说的是：为什么我要这样做？所以我宁可抛弃一切。结果所谓的叛逆只不过是为了追求自己看得见的名声和心灵恶劣的归宿，并在其中，灵魂冷却得和死去了一样，还要以为这叫做自由；而后者可是无时无刻不在想着什么只有自己才能达到的东西，却仍隐隐希望邀请别人一共跋涉与探索，他们时常能发现新的东西，这一新就能新上好久。呆在一个死圈子里有什么好探索的？</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/12/20/对角色设计的一些想法/" rel="next" title="对角色设计的一些想法">
+                <i class="fa fa-chevron-left"></i> 对角色设计的一些想法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/20/较旧的宣泄/" rel="prev" title="较旧的宣泄">
+                较旧的宣泄 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="hypercomments_widget"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Roarroarroar" />
+          <p class="site-author-name" itemprop="name">Roarroarroar</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">74</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-mars-double"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://haxushu.github.io/" title="(Algorithm)Shu Xu" target="_blank">(Algorithm)Shu Xu</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://xchen555.github.io/" title="(Data)Xi Chen" target="_blank">(Data)Xi Chen</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.justzht.com/" title="(Game)Haotian Zheng" target="_blank">(Game)Haotian Zheng</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://bugzhang.com/" title="(Web)Chong Zhang" target="_blank">(Web)Chong Zhang</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://x-fei.me/" title="Feifei Xue" target="_blank">Feifei Xue</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://tasmeta.info/" title="Tas" target="_blank">Tas</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-学习方法"><span class="nav-number">1.</span> <span class="nav-text">1. 学习方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-佩雷尔曼"><span class="nav-number">2.</span> <span class="nav-text">2. 佩雷尔曼</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-类型论"><span class="nav-number">3.</span> <span class="nav-text">3. 类型论</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-叛逆-vs-反抗"><span class="nav-number">4.</span> <span class="nav-text">4 叛逆 vs 反抗</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-adjust"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Roarroarroar</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: 99876, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		
+		_hcwp.push({widget:"Stream", widget_id: 99876, xid: "2019/12/20/较旧的杂感/"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/99876/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>

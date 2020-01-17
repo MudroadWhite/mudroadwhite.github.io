@@ -1,0 +1,740 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="default">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="我在学机器学习的时候，听到了来自逻辑那边的批评。逻辑AI的人认为，现在的机器学习的模型无法像逻辑一样清晰地揭示有意义的内容。我后来按着coursera上面的教程，把机器学习给过了一个遍，感觉这句话的确是对的：你只需要按着应有的操作写代码就行了，压根不需要理解这个操作那个操作对应的是人们意识里面如何的直觉。我开始逐渐相信这句话，于是机器学习的阅读一动不动。 逻辑AI希望他们能够重新回到自己的位置上。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机器学习和一些大学回忆">
+<meta property="og:url" content="http://yoursite.com/2019/12/20/机器学习和一些大学回忆/index.html">
+<meta property="og:site_name" content="Rawrrrrrrr">
+<meta property="og:description" content="我在学机器学习的时候，听到了来自逻辑那边的批评。逻辑AI的人认为，现在的机器学习的模型无法像逻辑一样清晰地揭示有意义的内容。我后来按着coursera上面的教程，把机器学习给过了一个遍，感觉这句话的确是对的：你只需要按着应有的操作写代码就行了，压根不需要理解这个操作那个操作对应的是人们意识里面如何的直觉。我开始逐渐相信这句话，于是机器学习的阅读一动不动。 逻辑AI希望他们能够重新回到自己的位置上。">
+<meta property="og:updated_time" content="2019-12-21T01:44:20.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="机器学习和一些大学回忆">
+<meta name="twitter:description" content="我在学机器学习的时候，听到了来自逻辑那边的批评。逻辑AI的人认为，现在的机器学习的模型无法像逻辑一样清晰地揭示有意义的内容。我后来按着coursera上面的教程，把机器学习给过了一个遍，感觉这句话的确是对的：你只需要按着应有的操作写代码就行了，压根不需要理解这个操作那个操作对应的是人们意识里面如何的直觉。我开始逐渐相信这句话，于是机器学习的阅读一动不动。 逻辑AI希望他们能够重新回到自己的位置上。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/12/20/机器学习和一些大学回忆/"/>
+
+
+
+
+
+  <title>机器学习和一些大学回忆 | Rawrrrrrrr</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Rawrrrrrrr</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/20/机器学习和一些大学回忆/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Roarroarroar">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rawrrrrrrr">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">机器学习和一些大学回忆</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-20T19:44:04-06:00">
+                2019-12-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/12/20/机器学习和一些大学回忆/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2019/12/20/机器学习和一些大学回忆/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>我在学机器学习的时候，听到了来自逻辑那边的批评。逻辑AI的人认为，现在的机器学习的模型无法像逻辑一样清晰地揭示有意义的内容。我后来按着coursera上面的教程，把机器学习给过了一个遍，感觉这句话的确是对的：你只需要按着应有的操作写代码就行了，压根不需要理解这个操作那个操作对应的是人们意识里面如何的直觉。我开始逐渐相信这句话，于是机器学习的阅读一动不动。</p>
+<p>逻辑AI希望他们能够重新回到自己的位置上。我是这样子带着旧世界的希冀走过来的——然后到了现在，我读到了加缪和萨特的存在主义。有些时候，你看问题想问题不必那么仔细；你只需要从一个合适的角度，让你不偏不倚地意识到事物的存在。这么一看来，逻辑AI和现代ML之争仿佛失去了意义。而为了让我质疑我自己捎带的希冀，我在4年以后才得到了答案。</p>
+<p>我在进入大学时候，看到了有人被辅导员请上了讲台，因为那一个人会编程，剩下的所有人几乎都没学过编程。我心想，我多么后悔在高中的时候只学了课内的东西，没有去学编程；我又想，当我从大学里走出来以后，我要超越所有的这些人。</p>
+<p>现在我再度回顾他人的轨迹：他们知道自己所在的学校享有优渥的教育资源，所以他们最大的目标，就是按部就班地学习。但我又看了看我自己，我意识到自己所处的位置的教育质量太差，只呆在那个地方没有好后果。所以我一向以为自己要做到的，就是去超越自己所在的环境——以至于哪怕到了一个环境足够好的地方，我依然希望能去超越；盲目的行动，依然不抵的能力，愈发坚固了我超越的心。我恐惧于呆在一个地方，一直持有着大量的刻板概念，而这“刻板”的概念，是我在大一的时候旅游的时候，那里的老师揭示给我的。我终于发现了我和他人之间态度鲜明的区别已经形成：别人来到了一个新地方以后，想着是适应那里；我来到了一个新地方以后，想着是超越那里。我似乎比别人更早期地习惯了孤独。在gap的那一年里，我曾观察到，我自己的心灵的成熟非常快。</p>
+<p>我已经在阅读和反思下逐渐认识到，很多人都有不了解的东西，哪怕他们的职业再高；哪怕他们的薪资再低；又或许哪怕他们的职业再低。超越的后果竟然是这样子的一个态度：不消解争执，但看似在适应争执。我不知道逻辑的人会不会考虑到“存在主义”的角度。我想，这时候选AI/ML对我来说已经不是什么事情；这总能对应到哲学上视角的切换。面对我昔日的固执，我终于学会了一点点一笑了之的趣味。如果我要去了解，如果我要去做，那我只会想着，那是别人在要求我做或不做。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/12/20/如何听懂COOS/" rel="next" title="如何听懂COOS">
+                <i class="fa fa-chevron-left"></i> 如何听懂COOS
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/20/遗忘的遗忘/" rel="prev" title="遗忘的遗忘">
+                遗忘的遗忘 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="hypercomments_widget"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Roarroarroar" />
+          <p class="site-author-name" itemprop="name">Roarroarroar</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">74</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-mars-double"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://haxushu.github.io/" title="(Algorithm)Shu Xu" target="_blank">(Algorithm)Shu Xu</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://xchen555.github.io/" title="(Data)Xi Chen" target="_blank">(Data)Xi Chen</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.justzht.com/" title="(Game)Haotian Zheng" target="_blank">(Game)Haotian Zheng</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://bugzhang.com/" title="(Web)Chong Zhang" target="_blank">(Web)Chong Zhang</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://x-fei.me/" title="Feifei Xue" target="_blank">Feifei Xue</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://tasmeta.info/" title="Tas" target="_blank">Tas</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-adjust"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Roarroarroar</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: 99876, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		
+		_hcwp.push({widget:"Stream", widget_id: 99876, xid: "2019/12/20/机器学习和一些大学回忆/"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/99876/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>
