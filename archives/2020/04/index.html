@@ -93,16 +93,12 @@
 
 
 
-<meta name="description" content="摘要我们探讨非正式的概念“可计算性”或者“有效的计算能力”，以及一般用来形式化地定义它的两个术语，“（图灵）可计算性”和“（广义）递归性”。我们讨论它们的起源、严格的技术性定义、概念、历史、一般的语言上的意义、当今（数学上的）角色的成因，如何被初试牛刀(?)、又在现在被如何使用，对非专业人士产生的影响，对之的使用对可计算性理论这门学科未来的内容产生的影响，以及与其它领域的联系。 在对可计算性和递归">
 <meta property="og:type" content="website">
-<meta property="og:title" content="可计算性和递归">
-<meta property="og:url" content="http://yoursite.com/translation/car/car.html">
+<meta property="og:title" content="Rawrrrrrrr">
+<meta property="og:url" content="http://yoursite.com/archives/2020/04/index.html">
 <meta property="og:site_name" content="Rawrrrrrrr">
-<meta property="og:description" content="摘要我们探讨非正式的概念“可计算性”或者“有效的计算能力”，以及一般用来形式化地定义它的两个术语，“（图灵）可计算性”和“（广义）递归性”。我们讨论它们的起源、严格的技术性定义、概念、历史、一般的语言上的意义、当今（数学上的）角色的成因，如何被初试牛刀(?)、又在现在被如何使用，对非专业人士产生的影响，对之的使用对可计算性理论这门学科未来的内容产生的影响，以及与其它领域的联系。 在对可计算性和递归">
-<meta property="og:updated_time" content="2018-10-29T00:27:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="可计算性和递归">
-<meta name="twitter:description" content="摘要我们探讨非正式的概念“可计算性”或者“有效的计算能力”，以及一般用来形式化地定义它的两个术语，“（图灵）可计算性”和“（广义）递归性”。我们讨论它们的起源、严格的技术性定义、概念、历史、一般的语言上的意义、当今（数学上的）角色的成因，如何被初试牛刀(?)、又在现在被如何使用，对非专业人士产生的影响，对之的使用对可计算性理论这门学科未来的内容产生的影响，以及与其它领域的联系。 在对可计算性和递归">
+<meta name="twitter:title" content="Rawrrrrrrr">
 
 
 
@@ -130,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/translation/car/car.html"/>
+  <link rel="canonical" href="http://yoursite.com/archives/2020/04/"/>
 
 
 
 
 
-  <title>可计算性和递归 | Rawrrrrrrr</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>Archive | Rawrrrrrrr</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -161,7 +157,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail ">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left  page-archive  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -255,32 +251,65 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-  <header class="post-header">
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
 
-	<h1 class="post-title" itemprop="name headline">可计算性和递归</h1>
-
-
-
-</header>
-
-    
-    
-      <h5 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h5><p>我们探讨非正式的概念“可计算性”或者“有效的计算能力”，以及一般用来形式化地定义它的两个术语，“（图灵）可计算性”和“（广义）递归性”。我们讨论它们的起源、严格的技术性定义、概念、历史、一般的语言上的意义、当今（数学上的）角色的成因，如何被初试牛刀(?)、又在现在被如何使用，对非专业人士产生的影响，对之的使用对可计算性理论这门学科未来的内容产生的影响，以及与其它领域的联系。</p>
-<p>在对可计算性和递归进行了谨慎的历史上和概念上的分析后，我们在§7中对保留“可计算性”和“递归”在内涵上的差异提出了几个建议。特别地我们建议：“递归的”这个术语应该不再带有“可计算”和“可判定”的额外意义；用图灵机、寄存机或者它们的衍生种类定义的函数应当被称作“可计算”而非“递归的”；我们应当对丘奇论题和图灵论题内涵上的区别加以辨别，并将后者仅用于机器相关的问题上；而这一门学科，应当被称作“可计算性理论”或者简略地“可计算性”，而不再是“递归函数论”。</p>
-<hr>
-<h4 id="1-引言"><a href="#1-引言" class="headerlink" title="1 引言"></a>1 引言</h4><p>所有的函数都定义在非负整数$\omega = \{0, 1, 2…\}$上，所有的集合都是$\omega$的子集。可计算性理论的领域核心概念是对“有效可计算”或者“可计算的函数”的思想。</p>
-<p><strong>定义1.1.</strong> 一个函数是“可计算的(computable)”（也被称作“有效可算”(?effectively calculable)或者仅“可算的”(?calculable)），如果它能被一个有限的机械过程计算。（更精确的定义见§3.1.）</p>
-<p><strong>定义1.2.</strong> (i) 一个函数是图灵可计算的，如果这个函数能被图灵机定义，参见Turing 1936（见[50]或者[93]）中所定义。</p>
-<p>(ii) 一个集合$A$是计算可枚举的(computably enumerable, c.e.)，如果$A$是$\phi$（？？？），或者是一个图灵可计算函数的值域。</p>
-<p>(iii) 一个函数$f$是递归(recursive)的，如果它是广义递归的，参见Godel 1934的定义（同时也可参见Kleene在1936, 1943的衍生，还有[1952, 274页]）</p>
-<p>(iv) 一个集合是递归可枚举的(recursively enumerable, r.e.)，如果A是$\phi$或者是一个递归函数的值域。</p>
-<p>我们将在后文更多地提及这些正式定义和它们的含义。现在我们将严格地使用上面的内涵意义考虑这些术语的区别，而不会去对它们的外延意义，或者其它与它们数学意义上等价的词汇（例如lambda可定义、mu递归的，或者更往后介绍的Post normal system(???)）辨别为一，非正式的、丘奇论题或者图灵论题下的可计算/有效可算亦然。</p>
-<p>一些逻辑学家已经点出，可计算性理论这门学科（下文简作“这门学科”）被叫做“递归函数论”或者“递归论”，而非显然更加自然的“可计算性理论”，如我们在这里所名，令人困惑。例，Feferman 1992[§6.6]写到，“……数学上的可计算性的理论——在递归论的伪装下。”几十年以来，学术中有用“可计算性理论”取代“递归论”的大体趋势，于各类书籍的标题和副标题上体现尤甚，如Cutland 1980或者Soare 1987的副标题，“A Study of Computable Functions and Computably Generated Sets ”。</p>
-<p>[p2]<br>​    </p>
+    <span class="archive-page-counter">
+      
+      
+       
+        
+      90 posts in total.
+    </span>
 
     
-  </div>
+
+      
+      
+      
+
+      
+        
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2020">2020</h2>
+        </div>
+      
+      
+
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2020/04/02/我现在的学习环境/" itemprop="url">
+              
+                <span itemprop="name">我现在的学习环境</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2020-04-02T17:55:33-05:00"
+              content="2020-04-02" >
+          04-02
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+    
+
+  </section>
+
+  
+
 
 
           </div>
@@ -288,12 +317,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-      <div id="hypercomments_widget"></div>
-    
-  </div>
-
 
         </div>
         
@@ -313,17 +336,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -410,22 +424,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-引言"><span class="nav-number"></span> <span class="nav-text">1 引言</span></a></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -539,10 +537,12 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
-
   
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
+
 
   
 
@@ -567,8 +567,6 @@
 		_hcwp.push({widget:"Bloggerstream", widget_id: 99876, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
 		
-		_hcwp.push({widget:"Stream", widget_id: 99876, xid: "translation/car/car.html"});
-		
 
 		(function() {
 		if("HC_LOAD_INIT" in window)return;
@@ -579,24 +577,7 @@
 		var s = document.getElementsByTagName("script")[0];
 		s.parentNode.insertBefore(hcc, s.nextSibling);
 		})();
-		</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
+		</script>
 
 	
 
@@ -624,6 +605,43 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
   
 
 
