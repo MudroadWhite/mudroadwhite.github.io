@@ -1,0 +1,743 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="default">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="今天一天无所事事，几乎又要回到了以前那种状态——写不出什么东西出来。但是我想了想还是回忆起来了。可能原来真的是，我本来以为一些事情非常有趣，但是随着我阅历的加深，我逐渐习惯了它们，于是觉得无聊，于是就忘了吧？ 首先是作业，作业是我要把hls给整合到一个特定版本的ghc里面去。我搜了半天，接连弄懂了几个问题：什么是container，什么是image，还有怎样子把一个image用在一个contain">
+<meta property="og:type" content="article">
+<meta property="og:title" content="这一天的记录">
+<meta property="og:url" content="http://yoursite.com/2021/06/18/这一天的记录/index.html">
+<meta property="og:site_name" content="Rawrrrrrrr">
+<meta property="og:description" content="今天一天无所事事，几乎又要回到了以前那种状态——写不出什么东西出来。但是我想了想还是回忆起来了。可能原来真的是，我本来以为一些事情非常有趣，但是随着我阅历的加深，我逐渐习惯了它们，于是觉得无聊，于是就忘了吧？ 首先是作业，作业是我要把hls给整合到一个特定版本的ghc里面去。我搜了半天，接连弄懂了几个问题：什么是container，什么是image，还有怎样子把一个image用在一个contain">
+<meta property="og:updated_time" content="2021-06-18T22:51:07.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="这一天的记录">
+<meta name="twitter:description" content="今天一天无所事事，几乎又要回到了以前那种状态——写不出什么东西出来。但是我想了想还是回忆起来了。可能原来真的是，我本来以为一些事情非常有趣，但是随着我阅历的加深，我逐渐习惯了它们，于是觉得无聊，于是就忘了吧？ 首先是作业，作业是我要把hls给整合到一个特定版本的ghc里面去。我搜了半天，接连弄懂了几个问题：什么是container，什么是image，还有怎样子把一个image用在一个contain">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2021/06/18/这一天的记录/"/>
+
+
+
+
+
+  <title>这一天的记录 | Rawrrrrrrr</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Rawrrrrrrr</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/06/18/这一天的记录/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Roarroarroar">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rawrrrrrrr">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">这一天的记录</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-06-18T17:40:25-05:00">
+                2021-06-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/06/18/这一天的记录/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2021/06/18/这一天的记录/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>今天一天无所事事，几乎又要回到了以前那种状态——写不出什么东西出来。但是我想了想还是回忆起来了。可能原来真的是，我本来以为一些事情非常有趣，但是随着我阅历的加深，我逐渐习惯了它们，于是觉得无聊，于是就忘了吧？</p>
+<p>首先是作业，作业是我要把hls给整合到一个特定版本的ghc里面去。我搜了半天，接连弄懂了几个问题：什么是container，什么是image，还有怎样子把一个image用在一个container上面。但愿它的解法实际上就是这么简单……</p>
+<p>不知道为什么昨晚在gay app上面聊了一点天以后今天突然不想聊了，觉得有点害怕。</p>
+<p>下午感觉好像非常不爽，想来想去最后买了一顿大餐。吃了好几天的subway，今天突然觉得这个大餐实在是份额太大了，于是把薯格吃完了就已经饱了，不想再吃留下来的两块大炸鸡了……</p>
+<p>在电子书库里找到了几本中意去读的书，其中一本是之前死去活来搜不到的娇惯的心灵。但是我发现我突然有点读不进去这些东西，在怀疑这些东西是否有养分。epubee真可怜，因为它还是上不去……</p>
+<p>我总算稍微耐下了一点性子去考察推特上生态教育相关的东西，发现越考察它就越来到了农学。这一点，哪怕是推特上那群见识短浅的人也没有办法去考察到的，而去打破这个问题，要求的就是信息茧房意识的强烈突破而已。然后我发现了这样子的一条脉络：我本来对生态教育的理解只有生态教育，但是现在我发现它可能应该归属美国的农学的研究范畴，而如果这一切意味着农学，那应该意味着生物系/农业系（？）的人更加熟悉，那就可以顺着这个关键词考察国内的生物系是否有这个方向，进而去开辟他们社区的了解。可能在知乎上比较好干。。。</p>
+<p>因为这个调查，我突然在想，我是否应该尽快去问一下推特上看到的一群pl人，他们是否听说过之前我看到的另外一个人介绍的学者。</p>
+<p>然后是那个美国友人。我希望能够把这段时间我发现的有意思的东西都分享给她。这包括：她应该绝对不会闻不出香味的薰衣草，然后向她介绍香草的好处；水晶洞；可能的利用网络的途径，例如我找到的一个农业相关的discord。我其实觉得，这些社区都是网上活生生存在的社区，在对应的领域之下，肯定是微不足道的；可是却被我用来极大地开辟我的认知。我在想，这样子的网络，它能发挥出来的威力究竟有多大？这时候我又想到了，其实很多人都会忽略我说的话。例如我说，网络本应连接全世界。对于他们来说，这句话不是用来信的，这句话是用来鼓动气氛的。所以他们根本发挥不出这句话的威力……</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/06/17/现实的生活得到了丰富，以及对应的日记/" rel="next" title="现实的生活得到了丰富，以及对应的日记">
+                <i class="fa fa-chevron-left"></i> 现实的生活得到了丰富，以及对应的日记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="hypercomments_widget"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Roarroarroar" />
+          <p class="site-author-name" itemprop="name">Roarroarroar</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">426</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-mars-double"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://haxushu.github.io/" title="(Algorithm)Shu Xu" target="_blank">(Algorithm)Shu Xu</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://xchen555.github.io/" title="(Data)Xi Chen" target="_blank">(Data)Xi Chen</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.justzht.com/" title="(Game)Haotian Zheng" target="_blank">(Game)Haotian Zheng</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://bugzhang.com/" title="(Web)Chong Zhang" target="_blank">(Web)Chong Zhang</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://x-fei.me/" title="Feifei Xue" target="_blank">Feifei Xue</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://tasmeta.info/" title="Tas" target="_blank">Tas</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://claws3306.github.io" title="AshChen" target="_blank">AshChen</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-adjust"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Roarroarroar</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: 99876, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		
+		_hcwp.push({widget:"Stream", widget_id: 99876, xid: "2021/06/18/这一天的记录/"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/99876/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>
